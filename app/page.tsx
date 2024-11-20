@@ -10,6 +10,7 @@ import bannerImage from '../public/banner.png'
 import taskify from '../public/taskify.png'
 import superstudy from '../public/superstudy.png'
 import bytestore from '../public/bytestore.png'
+import portfolio from '../public/portfolio.png'
 
 const projects = [
   {
@@ -37,11 +38,11 @@ const projects = [
     visitUrl: "https://bytestore.snowy.codes"
   },
   {
-    title: "Coming Soon",
-    description: "Coming Soon",
-    image: "",
-    tags: ["Maybe C++", "Coming Soon"],
-    sourceUrl: "#",
+    title: "This Site",
+    description: "The source code for this website",
+    image: portfolio,
+    tags: ["React", "NextJS", "TypeScript"],
+    sourceUrl: "https://github.com/snowypy/portfolio",
     visitUrl: "#"
   }
 ]
@@ -142,9 +143,9 @@ export default function Home() {
         </header>
 
         <section className="mt-16">
-          <h2 className="text-xl text-[#DCB8B0] font-mono mb-8">showcase</h2>
+          <h2 className="text-xl text-[#DCB8B0] font-mono mb-8"><b>showcase</b></h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
             {projects.map((project, index) => (
               <motion.div
               
@@ -169,7 +170,7 @@ export default function Home() {
                   </Link>
 
                   <div className="p-4">
-                    <h3 className="font-mono text-[#DCB8B0] text-lg mb-2 font-bold cursor-pointer"><Link href={`https://snowyjs.lol/project/${project.title}`}>{project.title}</Link></h3>
+                    <h3 className="font-mono text-[#DCB8B0] text-lg mb-3 font-bold cursor-pointer"><Link href={`https://snowyjs.lol/project/${project.title}`}>{project.title}</Link></h3>
                     <p className="font-mono text-[#D2D2D4] text-sm mb-4">{project.description}</p>
 
                     <div className="flex flex-wrap gap-2 mb-4">

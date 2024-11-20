@@ -9,6 +9,7 @@ import bannerImage from '../../public/banner.png'
 import taskify from '../../public/taskify.png'
 import superstudy from '../../public/superstudy.png'
 import bytestore from '../../public/bytestore.png'
+import portfolio from '../../public/portfolio.png'
 
 const projects = [
   {
@@ -34,6 +35,14 @@ const projects = [
     tags: ["React", "NextJS", "TypeScript"],
     sourceUrl: "https://github.com/snowypy/ByteStore-Frontend",
     visitUrl: "https://bytestore.snowy.codes"
+  },
+  {
+    title: "This Site",
+    description: "The source code for this website",
+    image: portfolio,
+    tags: ["React", "NextJS", "TypeScript"],
+    sourceUrl: "https://github.com/snowypy/portfolio",
+    visitUrl: "#"
   }
 ]
 
