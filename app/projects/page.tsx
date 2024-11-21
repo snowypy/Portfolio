@@ -10,6 +10,7 @@ import taskify from '../../public/taskify.png'
 import superstudy from '../../public/superstudy.png'
 import bytestore from '../../public/bytestore.png'
 import portfolio from '../../public/portfolio.png'
+import weathero from '../../public/weathero.png'
 
 const projects = [
   {
@@ -32,7 +33,7 @@ const projects = [
     title: "ByteStore",
     description: "An advanced and reliable Jitpack alternative",
     image: bytestore,
-    tags: ["React", "NextJS", "TypeScript"],
+    tags: ["React", "NextJS", "TypeScript", "Kotlin"],
     sourceUrl: "https://github.com/snowypy/ByteStore-Frontend",
     visitUrl: "https://bytestore.snowy.codes"
   },
@@ -43,7 +44,15 @@ const projects = [
     tags: ["React", "NextJS", "TypeScript"],
     sourceUrl: "https://github.com/snowypy/portfolio",
     visitUrl: "#"
-  }
+  },
+  {
+    title: "Weathero",
+    description: "A weather app that uses the free Weather API",
+    image: weathero,
+    tags: ["React", "NextJS", "TypeScript"],
+    sourceUrl: "https://github.com/snowypy/Weathero",
+    visitUrl: "https://weathero.snowy.codes"
+  },
 ]
 
 export default function ProjectsPage() {
