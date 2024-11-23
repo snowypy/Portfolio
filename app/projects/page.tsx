@@ -38,8 +38,8 @@ const projects = [
     visitUrl: "https://bytestore.snowy.codes"
   },
   {
-    title: "This Site",
-    description: "The source code for this website",
+    title: "Portfolio",
+    description: "The source code for this portfolio website",
     image: portfolio,
     tags: ["React", "NextJS", "TypeScript"],
     sourceUrl: "https://github.com/snowypy/portfolio",
