@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, ReactNode } from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
@@ -85,18 +85,20 @@ const projects = [
 ]
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default function ProjectPage({ params }: ProjectPageProps) {
   const [project, setProject] = useState<any>(null)
 
   useEffect(() => {
-    const foundProject = projects.find(p => p.title.toLowerCase() === params.slug.toLowerCase())
-    setProject(foundProject || null)
-  }, [params.slug])
+    params.then(({ slug }) => {
+      const foundProject = projects.find(p => p.title.toLowerCase() === slug.toLowerCase())
+      setProject(foundProject || null)
+    })
+  }, [params])
 
   if (!project) {
     return <div>Project not found</div>
