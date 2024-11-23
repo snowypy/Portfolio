@@ -15,6 +15,21 @@ import dupecrush from '../../public/dupecrush.png'
 import hardcore from '../../public/hardcore.png'
 import me from '../../public/me.jpg'
 
+interface Project {
+    title: string
+    description: string
+    image: any
+    tags: string[]
+    sourceUrl: string
+    visitUrl: string
+    duration: string
+    startDate: string
+    details: string
+    challenges: string
+    learnings: string
+    futureImprovements: string
+  }
+
 const workExperiences = [
   {
     title: "Staff Member", 
