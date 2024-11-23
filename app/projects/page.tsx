@@ -62,7 +62,8 @@ export default function ProjectsPage() {
         <nav className="flex justify-between items-center mb-16">
           <Link className="flex items-center space-x-2 text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors" href="/">
             <ArrowLeft className="h-5 w-5" />
-            <span className="font-mono">back to home</span>
+            <span className="font-mono">back to home</span
+>
           </Link>
         </nav>
 
@@ -84,7 +85,7 @@ export default function ProjectsPage() {
         <header className="space-y-4 max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl font-bold font-mono text-[#DCB8B0]">My Projects</h1>
           <p className="text-[#D2D2D4] leading-relaxed">
-            Here's a comprehensive list of my projects.
+            Here's a comprehensive list of my projects. Click on a project to view more details.
           </p>
         </header>
 
@@ -103,7 +104,7 @@ export default function ProjectsPage() {
                 }}
               >
                 <div className="bg-[#1A1721]/80 border border-white/10 rounded-lg overflow-hidden h-full flex flex-col">
-                  <Link href={`/project/${project.title}`}>
+                  <Link href={`/project/${project.title.toLowerCase()}`}>
                     <div className="aspect-video relative cursor-pointer">
                       <Image
                         src={project.image}
@@ -116,7 +117,7 @@ export default function ProjectsPage() {
 
                   <div className="p-4 flex-grow flex flex-col">
                     <h3 className="font-mono text-[#DCB8B0] text-lg mb-2 font-bold cursor-pointer">
-                      <Link href={`/project/${project.title}`}>{project.title}</Link>
+                      <Link href={`/project/${project.title.toLowerCase()}`}>{project.title}</Link>
                     </h3>
                     <p className="font-mono text-[#D2D2D4] text-sm mb-4 flex-grow">{project.description}</p>
 
@@ -154,7 +155,7 @@ export default function ProjectsPage() {
           </div>
         </section>
 
-        <header className="space-y-4 max-w-3xl mx-auto text-center mb-16">
+        <header className="space-y-4 max-w-3xl mx-auto text-center mt-16">
           <h1 className="text-4xl font-bold font-mono text-[#DCB8B0]"></h1>
             <p className="text-[#D2D2D4] leading-relaxed">
             Nothing more for now.. All Projects are created for HighSeas
@@ -172,3 +173,4 @@ export default function ProjectsPage() {
     </div>
   )
 }
+
