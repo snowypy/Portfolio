@@ -126,8 +126,8 @@ export default function Home() {
             </div>
           </div>
           <p className="text-[#D2D2D4] leading-relaxed">
-            I&apos;m currently working on Java and Kotlin Development for both open source and closed source repositories.
-            You can contact me via &apos;me@snowyjs.lol&apos; or via &apos;snowyjs&apos; on discord!
+            I&apos;m trying to become a Full Stack Developer. I&apos;m currently learning Rust and C++ for my projects.
+            
           </p>
           <div className="flex justify-center space-x-4">
             <Link className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors" href="who">

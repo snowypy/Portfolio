@@ -84,7 +84,7 @@ export default function ProjectsPage() {
         <header className="space-y-4 max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl font-bold font-mono text-[#DCB8B0]">My Projects</h1>
           <p className="text-[#D2D2D4] leading-relaxed">
-            Here's a comprehensive list of my projects. Each one represents a unique challenge and learning experience.
+            Here's a comprehensive list of my projects.
           </p>
         </header>
 
@@ -156,9 +156,16 @@ export default function ProjectsPage() {
 
         <header className="space-y-4 max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl font-bold font-mono text-[#DCB8B0]"></h1>
-          <p className="text-[#D2D2D4] leading-relaxed">
-            Nothing more for now.. Just High Seas projects for now.
-          </p>
+            <p className="text-[#D2D2D4] leading-relaxed">
+            Nothing more for now.. All Projects are created for HighSeas
+            <span className="mx-1"></span>
+            <Link 
+              href="https://highseas.hackclub.com"
+              className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors"
+            >
+              Learn More
+            </Link>
+            </p>
         </header>
 
       </div>

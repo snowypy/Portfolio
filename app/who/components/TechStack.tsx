@@ -1,3 +1,4 @@
+import { FaJava } from "react-icons/fa";
 import { 
     SiKotlin, 
     SiReact, 
@@ -11,6 +12,7 @@ import {
   
   const techStack = [
     { name: 'Kotlin', Icon: SiKotlin, color: '#E8DBF1' },
+    { name: 'Java', Icon: FaJava, color: '#FFF4D3' },
     { name: 'React', Icon: SiReact, color: '#E3F2F9' },
     { name: 'Javascript', Icon: SiJavascript, color: '#FFF4D3' },
     { name: 'Next.js', Icon: SiNextdotjs, color: '#E8E8E8' },

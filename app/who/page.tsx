@@ -101,7 +101,10 @@ export default function WhoPage() {
             <div>
               <h2 className="text-3xl font-bold text-[#DCB8B0] mb-6">About Me</h2>
               <p className="text-lg text-[#D2D2D4]/90 mb-6 leading-relaxed">
-                Hello! I&apos;m a developer with a love for creating beautiful and functional applications. I specialize in Kotlin, React and JavaScript, and I&apos;m always eager to learn new technologies.
+                Hello! I&apos;m a 15 year old developer from the United Kingdom trying to become a Full Stack Developer.
+              </p>
+              <p className="text-lg text-[#D2D2D4]/90 mb-6 leading-relaxed">
+                I specialize in Kotlin, React and JavaScript, and I&apos;m always eager to learn new technologies.
               </p>
               <p className="text-lg text-[#D2D2D4]/90 mb-6 leading-relaxed">
                 When I&apos;m not coding, you can find me hiking, listening to music, or tinkering with my old tech.
