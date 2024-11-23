@@ -84,7 +84,13 @@ const projects = [
   }
 ]
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+interface ProjectPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function ProjectPage({ params }: ProjectPageProps) {
   const [project, setProject] = useState<any>(null)
 
   useEffect(() => {
