@@ -133,6 +133,9 @@ export default function Home() {
             <Link className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors" href="who">
               whoami
             </Link>
+            <Link className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors" href="experience">
+              work
+            </Link>
             <Link className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors" href="blogs">
               blog
             </Link>
@@ -158,7 +161,7 @@ export default function Home() {
                   key={index}
                   className="bg-[#1A1721]/80 border border-white/10 rounded-lg overflow-hidden"
                 >
-                  <Link href={`https://snowyjs.lol/project/${project.title}`}>
+                  <Link href={`project/${project.title.toLowerCase()}`}>
                     <div className="aspect-video relative cursor-pointer">
                       <Image
                         src={project.image}
@@ -170,7 +173,7 @@ export default function Home() {
                   </Link>
 
                   <div className="p-4">
-                    <h3 className="font-mono text-[#DCB8B0] text-lg mb-3 font-bold cursor-pointer"><Link href={`https://snowyjs.lol/project/${project.title}`}>{project.title}</Link></h3>
+                    <h3 className="font-mono text-[#DCB8B0] text-lg mb-3 font-bold cursor-pointer"><Link href={`project/${project.title.toLowerCase}`}>{project.title}</Link></h3>
                     <p className="font-mono text-[#D2D2D4] text-sm mb-4">{project.description}</p>
 
                     <div className="flex flex-wrap gap-2 mb-4">
