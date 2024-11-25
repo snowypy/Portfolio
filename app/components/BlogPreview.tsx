@@ -14,7 +14,7 @@ export default function BlogPreview({ blog }: BlogPreviewProps) {
       />
       <div className="p-6 flex-grow flex flex-col">
         <h2 className="font-mono text-[#DCB8B0] text-xl mb-2 font-bold">
-          <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
+          <Link href={`/blogs/${blog.id}`}>{blog.title}</Link>
         </h2>
         <p className="text-[#D2D2D4] text-sm mb-4 flex-grow">{blog.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
