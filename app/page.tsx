@@ -173,7 +173,7 @@ export default function Home() {
                   </Link>
 
                   <div className="p-4">
-                    <h3 className="font-mono text-[#DCB8B0] text-lg mb-3 font-bold cursor-pointer"><Link href={`project/${project.title.toLowerCase}`}>{project.title}</Link></h3>
+                    <h3 className="font-mono text-[#DCB8B0] text-lg mb-3 font-bold cursor-pointer"><Link href={`/project/${project.title.toLowerCase()}`}>{project.title}</Link></h3>
                     <p className="font-mono text-[#D2D2D4] text-sm mb-4">{project.description}</p>
 
                     <div className="flex flex-wrap gap-2 mb-4">
