@@ -22,7 +22,7 @@ export default function BlogsPage() {
         <header className="space-y-4 max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl font-bold font-mono text-[#DCB8B0]">My Blog</h1>
           <p className="text-[#D2D2D4] leading-relaxed">
-            Thoughts, ideas, and explorations in the world of web development and beyond.
+            My thoughts, ideas and actions. All for you to read!
           </p>
         </header>
 
