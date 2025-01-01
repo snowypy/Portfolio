@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Github, Mail, Terminal, ExternalLink, Code, Cpu, ImageIcon } from 'lucide-react'
+import { Github, Mail, Terminal, Telescope, Code, Cpu, ImageIcon } from 'lucide-react'
 import Typewriter from 'typewriter-effect/dist/core'
 import bannerImage from '../public/banner.png'
 import taskify from '../public/taskify.png'
@@ -15,9 +15,9 @@ import portfolio from '../public/portfolio.png'
 const projects = [
   {
     title: "Taskify",
-    description: "A simple task manager built with vanilla JavaScript and CSS.",
+    description: "A simple task manager built with JavaScript and CSS.",
     image: taskify,
-    tags: ["Javascript", "CSS", "HTML"],
+    tags: ["Javascript", "CSS", "HTML", "Docker"],
     sourceUrl: "https://github.com/snowypy/taskify",
     visitUrl: "https://taskify.snowyjs.lol"
   },
@@ -142,6 +142,9 @@ export default function Home() {
             <Link className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors" href="projects">
               projects
             </Link>
+            <Link className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors" href="github">
+              github
+            </Link>
           </div>
         </header>
 
@@ -196,12 +199,16 @@ export default function Home() {
                         <Github className="w-4 h-4 mr-2" />
                         view source
                       </Link>
-                      <Link 
-                        href={project.visitUrl}
-                        className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors"
-                      >
-                        visit
-                      </Link>
+
+                      <div className="flex justify-end">
+                        <Link 
+                          href={project.visitUrl}
+                          className="inline-flex items-center text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors"
+                        >
+                          <Telescope className="w-4 h-4 mr-2" />
+                          visit
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
