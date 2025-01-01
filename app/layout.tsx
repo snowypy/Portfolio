@@ -33,12 +33,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased` }
         style={{ margin: 0, padding: 0, backgroundColor: '#13111C' }}
       >
-        {children}
-        <Footer />
+        <div>
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

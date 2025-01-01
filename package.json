@@ -25,6 +25,7 @@
     "react-tilt": "^1.0.2",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.172.0",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
