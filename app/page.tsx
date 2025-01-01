@@ -9,7 +9,7 @@ import Typewriter from 'typewriter-effect/dist/core'
 import bannerImage from '../public/banner.png'
 import taskify from '../public/taskify.png'
 import superstudy from '../public/superstudy.png'
-import bytestore from '../public/bytestore.png'
+import artifacts from '../public/artifacts.png'
 import portfolio from '../public/portfolio.png'
 
 const projects = [
@@ -30,9 +30,9 @@ const projects = [
     visitUrl: "https://superstudy.snowy.codes"
   },
   {
-    title: "ByteStore",
+    title: "Artifacts",
     description: "A advanced and reliable Jitpack alternative",
-    image: bytestore,
+    image: artifacts,
     tags: ["React", "NextJS", "TypeScript"],
     sourceUrl: "https://github.com/snowypy/ByteStore-Frontend",
     visitUrl: "https://bytestore.snowy.codes"
@@ -152,7 +152,7 @@ export default function Home() {
             {projects.map((project, index) => (
               <motion.div
               
-                whileHover={{ scale: 1.05}}
+                whileHover={{ scale: 1.05, y: -10}}
                 transition={{ type: "", stiffness: 300, damping: 20 }}
                 key={index}
               >
@@ -209,7 +209,7 @@ export default function Home() {
             ))}
           </div>
           
-          <div className="mt-8 text-center">
+          <div className="mt-8 mb-0 text-center">
             <Link 
               href="projects" 
               className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors font-mono text-sm"
