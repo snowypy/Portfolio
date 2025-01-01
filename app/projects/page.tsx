@@ -8,9 +8,13 @@ import { Github, Terminal, ArrowLeft } from 'lucide-react'
 import bannerImage from '../../public/banner.png'
 import taskify from '../../public/taskify.png'
 import superstudy from '../../public/superstudy.png'
-import bytestore from '../../public/bytestore.png'
+import artifacts from '../../public/artifacts.png'
 import portfolio from '../../public/portfolio.png'
+import landing from '../../public/landing.png'
+import tors from '../../public/tors.png'
 import weathero from '../../public/weathero.png'
+import moody from '../../public/moody.png'
+
 
 const projects = [
   {
@@ -30,12 +34,12 @@ const projects = [
     visitUrl: "https://superstudy.snowy.codes"
   },
   {
-    title: "ByteStore",
+    title: "Artifacts",
     description: "An advanced and reliable Jitpack alternative",
-    image: bytestore,
+    image: artifacts,
     tags: ["React", "NextJS", "TypeScript", "Kotlin"],
-    sourceUrl: "https://github.com/snowypy/ByteStore-Frontend",
-    visitUrl: "https://bytestore.snowy.codes"
+    sourceUrl: "https://github.com/snowypy/artifacts",
+    visitUrl: "https://artifacts.akrylic.org"
   },
   {
     title: "Portfolio",
@@ -53,6 +57,30 @@ const projects = [
     sourceUrl: "https://github.com/snowypy/Weathero",
     visitUrl: "https://weathero.snowy.codes"
   },
+  {
+    title: "Moody",
+    description: "A mood tracking app that I used to learn about ShadCN graphs",
+    image: moody,
+    tags: ["React", "NextJS", "TypeScript"],
+    sourceUrl: "https://github.com/snowypy/Moody",
+    visitUrl: "https://moody.snowy.codes"
+  },
+  {
+    title: "Landing",
+    description: "A landing page template for your next project",
+    image: landing,
+    tags: ["React", "NextJS", "TypeScript"],
+    sourceUrl: "https://github.com/snowypy/landing",
+    visitUrl: "https://vandal.snowy.codes"
+  },
+  {
+    title: "Tors",
+    description: "A simple and secure way to managet tasks via the command line",
+    image: tors,
+    tags: ["Rust", "Javascript", "TypeScript"],
+    sourceUrl: "https://github.com/snowypy/Tors-CLI",
+    visitUrl: "https://tors.snowy.codes"
+  }
 ]
 
 export default function ProjectsPage() {
@@ -94,6 +122,7 @@ export default function ProjectsPage() {
             {projects.map((project, index) => (
               <motion.div
                 key={index}
+                whileHover={{ scale: 1.01, y: -10}}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -104,7 +133,7 @@ export default function ProjectsPage() {
                 }}
               >
                 <div className="bg-[#1A1721]/80 border border-white/10 rounded-lg overflow-hidden h-full flex flex-col">
-                  <Link href={`/project/${project.title.toLowerCase()}`}>
+                  <Link href={`/project/${project.title?.toLowerCase()}`}>
                     <div className="aspect-video relative cursor-pointer">
                       <Image
                         src={project.image}
@@ -117,7 +146,7 @@ export default function ProjectsPage() {
 
                   <div className="p-4 flex-grow flex flex-col">
                     <h3 className="font-mono text-[#DCB8B0] text-lg mb-2 font-bold cursor-pointer">
-                      <Link href={`/project/${project.title.toLowerCase()}`}>{project.title}</Link>
+                      <Link href={`/project/${project.title?.toLowerCase()}`}>{project.title}</Link>
                     </h3>
                     <p className="font-mono text-[#D2D2D4] text-sm mb-4 flex-grow">{project.description}</p>
 
@@ -173,4 +202,3 @@ export default function ProjectsPage() {
     </div>
   )
 }
-
