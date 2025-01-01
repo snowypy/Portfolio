@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Github, Terminal, ArrowLeft } from 'lucide-react'
+import { Github, Telescope, ArrowLeft } from 'lucide-react'
 import bannerImage from '../../public/banner.png'
 import taskify from '../../public/taskify.png'
 import superstudy from '../../public/superstudy.png'
@@ -19,9 +19,9 @@ import moody from '../../public/moody.png'
 const projects = [
   {
     title: "Taskify",
-    description: "A simple task manager built with vanilla JavaScript and CSS.",
+    description: "A simple task manager built with JavaScript and CSS.",
     image: taskify,
-    tags: ["Javascript", "CSS", "HTML"],
+    tags: ["Javascript", "CSS", "HTML", "Docker"],
     sourceUrl: "https://github.com/snowypy/taskify",
     visitUrl: "https://taskify.snowyjs.lol"
   },
@@ -132,7 +132,7 @@ export default function ProjectsPage() {
                   delay: index * 0.1
                 }}
               >
-                <div className="bg-[#1A1721]/80 border border-white/10 rounded-lg overflow-hidden h-full flex flex-col">
+                <div className="bg-[#1A1721]/80 border border-white/10 rounded-lg overflow-hidden h-full flex flex-col relative">
                   <Link href={`/project/${project.title?.toLowerCase()}`}>
                     <div className="aspect-video relative cursor-pointer">
                       <Image
@@ -162,7 +162,7 @@ export default function ProjectsPage() {
                       ))}
                     </div>
                     
-                    <div className="flex items-center gap-4 font-mono text-sm">
+                    <div className="flex items-center justify-between font-mono text-sm">
                       <Link 
                         href={project.sourceUrl}
                         className="inline-flex items-center text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors"
@@ -170,12 +170,15 @@ export default function ProjectsPage() {
                         <Github className="w-4 h-4 mr-2" />
                         view source
                       </Link>
-                      <Link 
-                        href={project.visitUrl}
-                        className="text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors"
-                      >
-                        visit
-                      </Link>
+                      <div className="button-container flex justify-end">
+                        <Link 
+                          href={project.visitUrl}
+                          className="inline-flex items-center text-[#DCB8B0] hover:text-[#D2D2D4] transition-colors visit-button"
+                        >
+                          <Telescope className="w-4 h-4 mr-2" />
+                          visit
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
