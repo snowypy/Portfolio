@@ -1,19 +1,18 @@
 # My Portfolio
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+My site made with React & NextJS.
 
-## Getting Started
+## Features
 
-First, run the development server:
+Github Project Tracker
+Discord Status Tracker
+Projects
+Detailed Projects
+Blogs
+Work Page
+Education Page
+WhoAmI Page
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Author
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Made by Cigan.
