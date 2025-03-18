@@ -1,4 +1,7 @@
-# My Portfolio
+# HighSeas Portfolio
+
+> [!WARNING]
+> This is abandoned and will not recieve updates.
 
 My site made with React & NextJS.
 
